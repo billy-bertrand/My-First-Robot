@@ -1,14 +1,16 @@
 `The Challenge`:
 
-My team was tasked with building a robot that can perform two sets of tasks:
+My team was tasked with building a robot that performed two sets of tasks,
+over the course of two rounds:
 
-| Round 1               | Round 2                             |
-| ----------------------| ----------------------------------- |
-| - Cross a bridge      | - Follow a wall                     |
-| - Navigate a maze     | - Climb up a ramp                   |
-| - Locate salamanders  | - Measure the salinity of a solution|
+| Round 1                | Round 2                                  |
+| ---------------------- | ---------------------------------------- |
+| - ✅ Cross a bridge    | - ✅ Follow a wall                      |
+| - ✅ Navigate a maze   | - ❌ Climb up a ramp                    |
+| - ❌ Locate salamanders| - ❌ Measure the salinity of a solution |
 
-The course the robot would navigate on was the following:
+Round 1 - Maze navigation occurred on the left side the following course;
+and Round 2 - Salinity occured on the right side.
 
 ![Course Plan](./etc/course_diagram.PNG)
 
@@ -41,7 +43,7 @@ to callibrate the motor so it goes straight. I spent significant
 time guessing and checking hoping to find the right set of 
 values for motors. It did not work. 
 
-The first serious attempt was to use _encoders_, like the one below:
+The first serious attempt was to use **_encoders_**, like the one below:
 
 ![Encoder image](./etc/Encoders.jpg)
 
@@ -52,7 +54,7 @@ that adding them to the robot will make it go over
 the 20 x 20 x 20 cm size requierment my team was aiming
 for.
 
-The second idea was to use _solid axle_ for the wheels. The arrangement looked liked
+The second idea was to use **_solid axle_** for the wheels. The arrangement looked liked
 this:
 
 ![Solid axle](./etc/Solid_Axle.jpg)
@@ -74,7 +76,10 @@ The idea was conceptually interesting, but failed for two reasons:
 _Note: a lot og guesses and checks went into finding the right dimensions for the gears. That resulted in a lot of "wasted" time_.
 
 
-With the previous ideas failing, the team had to revert back to its original motor arrangement. Instead of guessing and checking, motor calibration problem was handled using the following piece of code:
+With the previous ideas failing, the team had to revert back 
+to the original motor arrangement, and calibrate the motors. 
+Instead of guessing and checking, **_motor calibration_** problem was 
+handled using the following piece of code:
 
 ```cpp
 for(int i = 90; i < 115; i++>){
@@ -96,4 +101,5 @@ I am proud of this experience because it is something I have never done before. 
 
 `Potential Improvements`:
 
-If I could do this over again, I would build a bigger robot.
+If I could do this over again, I would build a bigger robot to 
+perform more tasks.
