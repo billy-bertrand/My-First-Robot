@@ -118,9 +118,19 @@ resulting in a crash. 👇🏿
 
 ![Robot coming at angle](./etc/Crash_Illustration.gif)
 
-So, we addressed the problem in software by implementing a function
-responsible for maintaining the robot a relatively safe distance from
-an obstacle (i.e. wall). The result was fairly satisfactory 👇🏿
+So, we addressed the problem in software, by implementing a function
+responsible for maintaining the robot at a safe distance from
+an obstacle (i.e. wall). <br>
+I went through two iterations for this function. <br> <br>
+
+The first, relied on the three ping sensors of the robot to determine its orientation 👇🏿 <br> 
+
+![three ping correction](./etc/three_ping_correction.jpg)
+
+The idea was to _carefully_ choose a value for the `MAX_DISTANCE` argument for side ping sensor constructors so that they return `0` when the robot parallel to the wall (picture 1) **OR** a value when the robot is at an angle (picture 2 & 3). Unfortunately, this idea did not work because the side sensors returned unreliable data (wiring issues).
+
+[Professor Ayala](https://github.com/ChristianAyala) suggested I relied on (reliable) ping sensor.
+So, the second iteration of the function relied _only_ on the front ping sensor. The idea was to take the difference between the current and the previous ping distances and determine whether the robot got close to the wall or not. The result was fairly satisfactory 👇🏿
 
 ![Robot self correction](./etc/self_correction.gif)
 
@@ -131,6 +141,8 @@ I am proud of this experience because it is something I have never done before. 
 - _It's okay to ask for help_. I understood that there is no shame in asking for help, or not knowing something. The TAs were really helpful and ready to dedicate time for my team and other teams as well. I want to personally thank [Sam Timmins](https://github.com/sltimmins) here for his time, and input when I was stuck.
 
 - _I cannot do everything on your own_. This experience taught me the importance of relying on others. Trust that they will play their part as intended, so I can play mine as well.
+
+- _The Devil is in the detail_.
 
 # Potential Improvements 🌱
 
