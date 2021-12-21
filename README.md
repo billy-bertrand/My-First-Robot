@@ -44,7 +44,7 @@ The following 3D scan showcases the robot the team built 👇🏿.
 
 ##  The "Going Straight" Problem
 
-In my opinion, the first problem I encountered was the motors of the robot so it goes straight. I spent significant amounts of time guessing and checking hoping to find the right set of values for motors. It did not work.
+In my opinion, the first problem I encountered was callibrating the motors of the robot, so it goes straight. I spent significant amounts of time guessing and checking hoping to find the right set of values for motors. It did not work.
 
 ### Encoders  
 
@@ -52,7 +52,7 @@ The first serious attempt at solving the problem was to use **_encoders_**, like
 
 ![Encoder image](./etc/Encoders.jpg)
 
-We tried to use them to create P.I.D. control loop
+We tried to use them to create a variation of a P.I.D. control loop 
 to dynamically adjust the speed of our motors.
 Unfortunately, encoders were "too big" in a sense
 that fitting four of them on the robot will make it go over
