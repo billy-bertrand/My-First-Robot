@@ -121,8 +121,7 @@ resulting in a crash. 👇🏿
 
 So, we addressed the problem in software, by implementing a function
 responsible for maintaining the robot at a safe distance from
-an obstacle (i.e. wall). <br>
-I went through two iterations for this function. <br> <br>
+an obstacle (i.e. wall). I went through two iterations for this function. <br> <br>
 
 The first, relied on the three ping sensors of the robot to determine its orientation 👇🏿 <br> 
 
@@ -143,7 +142,7 @@ I am proud of this experience because it is something I have never done before. 
 
 - _I cannot do everything on your own_. This experience taught me the importance of relying on others. Trust that they will play their part as intended, so I can play mine as well.
 
-- _Plan "A" rarely works_. I witnessed it. Many attempts to solve a problem worked well on paper, but never worked the first time. They did not account for wiring issues, and/or unexpected behaviors of certain components. So part of this experience helped me realize that being a great engineer meant **_making the most out of available, and reliable components_**...
+- _Plan "A" rarely works_. I witnessed it. Many attempts to solve a problem worked well on paper, but **never** worked the first time. They did not account for wiring issues, and/or unexpected behaviors of certain components. So part of this experience helped me realize that part of being a great engineer meant **_making the most out of available, and reliable components_**...
 
 - _Being patient with myself_. It's okay to fail. It's part of the process. It really is. I realized that frustration occured when I refused to accept that an idea failed (because it looked "too good" on paper or in my head).
 
@@ -155,4 +154,4 @@ I am proud of this experience because it is something I have never done before. 
 
 - I would actively devise experiments and gather useful and reliable data on the performance on the robot on both courses of the map (the maze and the salinity side).
 
-- I would have pressured my team so we have more time for testing the robot.
+- I would have pressured my team so we have more time for testing the robot software.
