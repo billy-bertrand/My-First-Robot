@@ -9,8 +9,9 @@ over the course of two rounds:
 | - ✅ Navigate a maze   | - ❌ Climb up a ramp                    |
 | - ❌ Locate salamanders| - ❌ Measure the salinity of a solution |
 
-Round 1 - Maze navigation occurred on the left side the following course;
-and Round 2 - Salinity occured on the right side.
+Round 1 - Maze navigation - occurred on the two quadrants on the left;
+whereas Round 2 - Salinity - occured on the remaining two quadrants
+on the right.
 
 ![Course Plan](./etc/course_diagram.PNG)
 
@@ -40,28 +41,25 @@ The following 3D scan showcases the robot the team built 👇🏿.
 
 ##  The "Going Straight" Problem
 
-In my perspective, the first problem I encountered was getting
-to callibrate the motor so it goes straight. I spent significant 
-time guessing and checking hoping to find the right set of values for 
-motors. It did not work.
+In my opinion, the first problem I encountered was the motors of the robot so it goes straight. I spent significant amounts of time guessing and checking hoping to find the right set of values for motors. It did not work.
 
 ### Encoders  
 
-The first serious attempt was to use **_encoders_**, like the one below 👇🏿:
+The first serious attempt at solving the problem was to use **_encoders_**, like the one below 👇🏿:
 
 ![Encoder image](./etc/Encoders.jpg)
 
-We tried to use encoders and create P.I.D. control loop
-to dynamically adjust the speed of our motor.
+We tried to use them to create P.I.D. control loop
+to dynamically adjust the speed of our motors.
 Unfortunately, encoders were "too big" in a sense
-that adding them to the robot will make it go over
-the 20 x 20 x 20 cm size requierment my team was aiming
+that fitting four of them on the robot will make it go over
+the 20cm x 20cm x 20 cm size requirement my team was aiming
 for.
 
 ### Solid Axle
 
 The second idea was to use **_solid axle_** for the wheels. The arrangement looked liked
-this:
+this 👇🏿:
 
 ![Solid axle](./etc/Solid_Axle.jpg)
 
@@ -84,8 +82,8 @@ _Note: a lot og guesses and checks went into finding the right dimensions for th
 ### Motor Calibration
 
 With the previous ideas failing, the team had to revert back 
-to the original motor arrangement, and calibrate the motors. 
-Instead of guessing and checking, **_motor calibration_** problem was 
+to the original "4-motors" configuration, and calibrate the motors. 
+Instead of guessing and checking like before, motor calibration problem was 
 handled using the following piece of code:
 
 ```cpp
@@ -107,6 +105,7 @@ in the videos:
 
 ![crash map](./etc/CrashMap-Left-Maze.jpg)
 
+_Note: Red(🟥) dots = Crash  Yellow(🟨) dots = Over Limits_
 _Notice: The data on the image were not gathered **methodically** during the tests. They are based on the recordings of crashes made during testing._
 
 During tests, I noticed that the robot would sometimes come at angle to a wall,
@@ -121,11 +120,11 @@ an obstacle (i.e. wall). The result was fairly satisfactory 👇🏿
 
 ![Robot self correction](./etc/self_correction.gif)
 
-# Takeaways 
+# Takeaways ☺️
 
 I am proud of this experience because it is something I have never done before. Here are the few takeaways:
 
-- _It's okay to ask for help_. I understood that there are no shame in asking for help. The TAs were really helpful and ready to dedicate time for my team and other teams as well.
+- _It's okay to ask for help_. I understood that there is no shame in asking for help, or not knowing something. The TAs were really helpful and ready to dedicate time for my team and other teams as well. I want to personally thank [Sam Timmins](https://github.com/sltimmins) here for his time, and input when I was stuck.
 
 - _I cannot do everything on your own_. This experience taught me the importance of relying on others. Trust that they will play their part as intended, so I can play mine as well.
 
@@ -135,4 +134,4 @@ I am proud of this experience because it is something I have never done before. 
 
 - I would actively devise experiments and gather useful and reliable data on the performance on the robot on both courses of the map (the maze and the salinity side).
 
-- I would have pressured my team so we have more time for testing the robot
+- I would have pressured my team so we have more time for testing the robot.
