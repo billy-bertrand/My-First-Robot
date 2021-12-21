@@ -1,7 +1,10 @@
 # The Challenge 🎯
 
 My team was tasked with building a robot that performed two sets of tasks,
-over the course of two rounds:
+over the course of two rounds.
+
+✅ = Tasks completed
+❌ = Tasks not attempted
 
 | Round 1                | Round 2                                  |
 | ---------------------- | ---------------------------------------- |
