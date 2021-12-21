@@ -3,7 +3,7 @@
 My team was tasked with building a robot that performed two sets of tasks,
 over the course of two rounds.
 
-✅ = Tasks completed
+✅ = Tasks completed <br\>
 ❌ = Tasks not attempted
 
 | Round 1                | Round 2                                  |
@@ -108,7 +108,8 @@ in the videos:
 
 ![crash map](./etc/CrashMap-Left-Maze.jpg)
 
-_Note: Red(🟥) dots = Crash  Yellow(🟨) dots = Over Limits_
+_Note: Red(🟥) dots = Crash <br\>_
+_Yellow(🟨) dots = Over Limits_ <br\><br\>
 _Notice: The data on the image were not gathered **methodically** during the tests. They are based on the recordings of crashes made during testing._
 
 During tests, I noticed that the robot would sometimes come at angle to a wall,
