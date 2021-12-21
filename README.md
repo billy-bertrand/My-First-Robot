@@ -92,6 +92,7 @@ handled using the following piece of code:
 ```cpp
 for(int i = 90; i < 115; i++){
     robot -> pcaDC2MotorsTime(2, 108, 4, i, 3000);
+    delay(3000);
 }
 ```
 We set a fixed value for the left motor (`ID: 2`), and using a `for` loop, we continously assigned values to the right motor (`ID: 4`), and observed robot deviation after 3 seconds. We realized the robot was
