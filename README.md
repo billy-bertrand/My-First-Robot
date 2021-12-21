@@ -127,9 +127,9 @@ The first, relied on the three ping sensors of the robot to determine its orient
 
 ![three ping correction](./etc/three_ping_correction.jpg)
 
-The idea was to _carefully_ choose a value for the `MAX_DISTANCE` argument for side ping sensor constructors so that they return `0` when the robot parallel to the wall (picture 1) **OR** a value when the robot is at an angle (picture 2 & 3). Unfortunately, this idea did not work because the side sensors returned unreliable data (wiring issues).
+The idea was to _carefully_ choose a value for the `MAX_DISTANCE` argument for side ping sensor so that they _**both**_ return `0` when the robot is parallel to the wall (sketch 1) **OR** return a value and a zero when the robot is at an angle (sketch 2 & 3). Unfortunately, this idea did not work because the side sensors returned unreliable data (wiring issues 🔌😔).
 
-[Professor Ayala](https://github.com/ChristianAyala) suggested I relied on (reliable) ping sensor.
+[Professor Ayala](https://github.com/ChristianAyala) suggested I used the reliable ping sensor.
 So, the second iteration of the function relied _only_ on the front ping sensor. The idea was to take the difference between the current and the previous ping distances and determine whether the robot got close to the wall or not. The result was fairly satisfactory 👇🏿
 
 ![Robot self correction](./etc/self_correction.gif)
@@ -142,7 +142,11 @@ I am proud of this experience because it is something I have never done before. 
 
 - _I cannot do everything on your own_. This experience taught me the importance of relying on others. Trust that they will play their part as intended, so I can play mine as well.
 
-- _The Devil is in the detail_.
+- _Plan "A" rarely works_. I witnessed it. Many attempts to solve a problem worked well on paper, but never worked the first time. They did not account for wiring issues, and/or unexpected behaviors of certain components. So part of this experience helped me realize that being a great engineer meant **_making the most out of available, and reliable components_**...
+
+- _Being patient with myself_. It's okay to fail. It's part of the process. It really is. I realized that frustration occured when I refused to accept that an idea failed (because it looked "too good" on paper or in my head).
+
+- _The Devil 😈 is in the detail_. I understood that I needed to be more **_diligent_** about the work I produce. [Professor Fontenot](https://github.com/MarkFontenot) helped me realized that I need to be **_more methodical_**, in a sense that I must pay more attention to what goes into what I do, and how I do it... to not loose the trust of my audience. I thank him for this comment.
 
 # Potential Improvements 🌱
 
